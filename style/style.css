@@ -1,0 +1,1073 @@
+/* Base Styles */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+/* Background Video */
+.bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-width: 100vw;
+  min-height: 100vh;
+  width: auto;
+  height: auto;
+  z-index: -1;
+  object-fit: cover;
+}
+
+/* Header & Navigation Styles */
+.logo-img {
+  height: 40px;
+}
+
+/* Phone Button */
+.phone-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 40px;
+  min-height: 40px;
+  border-radius: 50%;
+  background: #f93b7a;
+  margin-right: 1rem;
+}
+
+/* Call to Action Button */
+.sc_button {
+  background: #22b455;
+  border: none;
+  min-height: 48px;
+  min-width: 160px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  transition: background 0.2s;
+  border-radius: 0;
+}
+
+.sc_button:hover {
+  background: #1e9e48;
+}
+
+.sc_button_title {
+  color: #fff;
+  font-weight: bold;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+.sc_button_text {
+  width: 100%;
+  text-align: center;
+}
+
+/* Hero Section */
+.hero-section {
+  min-height: 500px;
+  position: relative;
+  padding-bottom: 60px;
+}
+
+.welcome-text {
+  color: #22b455;
+  letter-spacing: 1px;
+}
+
+/* Scroll Down */
+.scroll-down {
+  position: absolute;
+  left: 0;
+  bottom: 1rem;
+  margin-left: 78px;
+  z-index: 10;
+}
+
+.scroll-down span:first-child {
+  font-size: 1.5rem;
+  color: #fff;
+}
+
+.scroll-down span:last-child {
+  font-size: 1.2rem;
+}
+
+/* Social Icons Vertical */
+.social-icons-vertical {
+  position: fixed;
+  right: 0;
+  top: 40%;
+  transform: translateY(-50%);
+  z-index: 10;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.icon-link {
+  width: 56px;
+  height: 56px;
+  background: #f93b7a;
+  border-radius: 0;
+  position: relative;
+  transition: width 0.3s, height 0.3s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.icon-label {
+  display: none;
+  background: #181d29;
+  color: #fff;
+  font-weight: 600;
+  font-size: 1.1rem;
+  padding: 0 2rem 0 1.5rem;
+  border-radius: 0;
+  position: absolute;
+  right: 100%;
+  top: 0;
+  white-space: nowrap;
+  min-width: 140px;
+  height: 100%;
+  align-items: center;
+  justify-content: flex-end;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s, transform 0.3s;
+  transform: translateX(-20px);
+}
+
+.icon-link i {
+  font-size: 2rem;
+  transition: font-size 0.3s;
+}
+
+.icon-link:hover {
+  z-index: 2;
+}
+
+.icon-link:hover .icon-label {
+  display: flex;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateX(0);
+}
+
+/* Social Links */
+.social-links {
+  position: absolute;
+  right: 0;
+  bottom: 1rem;
+  margin-right: 63px;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+}
+
+.social-links a {
+  font-size: 1rem;
+}
+
+/* Background Gradients */
+.bg-casino-gradient {
+  background: radial-gradient(circle at 0% 0%, rgba(64, 11, 36, 0.85) 0%, rgba(12, 6, 16, 0.7) 40%, rgba(0, 0, 8, 0.0) 70%), #18141f;
+  position: relative;
+  color: #181d29;
+  overflow: hidden;
+}
+
+.bg-casino-gradient-2 {
+  background: radial-gradient(circle at 100% 100%, rgba(64, 11, 36, 0.85) 0%, rgba(12, 6, 16, 0.7) 40%, rgba(0, 0, 8, 0.0) 70%), #18141f;
+  position: relative;
+  color: #181d29;
+  overflow: hidden;
+}
+
+/* Casino Section */
+.casino-man-img {
+  max-height: 600px;
+  min-height: 180px;
+  object-fit: cover;
+}
+
+.fun-event-box {
+  right: 0px;
+  left: auto;
+  bottom: -7px;
+  margin: 0 0 0.5rem 0.5rem;
+  background: #22b455;
+  color: #fff;
+  border-radius: 0;
+  min-width: 190px;
+  min-height: 150px;
+  max-width: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  z-index: 2;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.18);
+  padding: 2rem 1.5rem;
+}
+
+.casino-section-img-col {
+  position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.casino-section-text-col {
+  padding-left: 3rem;
+  text-align: left;
+}
+
+.casino-feature-divider {
+  border: none;
+  border-top: 1px solid #aaa;
+  opacity: 0.3;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Service Cards Section */
+.service-card {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.service-card:hover {
+  transform: translateY(-8px) scale(1.02);
+}
+
+.service-card-img {
+  border-radius: 0;
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+}
+
+.service-card-body {
+  background: #1a1225 !important;
+  color: #fff;
+  border-radius: 0;
+  min-height: 260px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.service-card-body h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  color: #fff;
+}
+
+.service-card-body p {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.service-arrow-btn {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  border: 2px solid #fff;
+  background: transparent;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.6rem;
+  margin: 0 auto;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  margin-top: 1.5rem;
+  position: relative;
+  overflow: hidden;
+  padding: 0;
+}
+
+.service-arrow-btn i {
+  font-size: 1.6rem;
+  margin: 0;
+  position: relative;
+  left: 0;
+  top: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.service-arrow-btn span {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-right: 0.5rem;
+}
+
+.service-arrow-btn:hover {
+  background: #fff;
+  color: #181622;
+  border-color: #fff;
+}
+
+.service-arrow-btn:hover i {
+  color: #181622;
+}
+
+/* Stats Section */
+.stat-green {
+  color: #22b455;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.stat-desc {
+  color: #b0b3c7;
+  font-size: 1.1rem;
+  margin-top: 0.5rem;
+}
+
+/* Image Overlay Section */
+.image-overlay-container {
+  position: relative;
+  min-height: 600px;
+  overflow: hidden;
+}
+
+.image-overlay-container img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  max-height: 700px;
+  object-fit: cover;
+  z-index: -1;
+  filter: brightness(0.7);
+  display: block;
+}
+
+.overlay-text {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+/* Blog Cards Section */
+.blog-card {
+  background: #11012d;
+  border-radius: 0 !important;
+  box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.blog-card:hover {
+  box-shadow: 0 6px 32px 0 rgba(0, 0, 0, 0.18);
+  transform: translateY(-4px) scale(1.02);
+}
+
+.blog-card img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  display: block;
+  border-radius: 0;
+}
+
+.blog-arrow-link {
+  color: #fff;
+  font-size: 2rem;
+  text-decoration: none;
+  transition: color 0.2s, transform 0.2s;
+  display: inline-block;
+}
+
+.blog-arrow-link:hover {
+  color: #f93b7a;
+  transform: translateX(8px) scale(1.2);
+}
+
+/* Newsletter Section */
+.corner-images-section {
+  background: #000;
+  position: relative;
+  min-height: 320px;
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+}
+
+.corner-img {
+  position: absolute;
+  z-index: 0;
+  pointer-events: none;
+  user-select: none;
+  width: 220px;
+  max-width: 30vw;
+  height: 100%;
+  object-fit: cover;
+}
+
+.corner-img-left {
+  left: 0;
+  bottom: 0;
+  top: 0;
+}
+
+.corner-img-right {
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+
+/* Footer Styles */
+.footer-main {
+  background: radial-gradient(circle at 10% 10%, #3a1127 0%, #18141f 100%);
+  color: #e3e3e3;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  font-size: 1.1rem;
+}
+
+.footer-main h4 {
+  color: #fff;
+  font-size: 1.4rem;
+  margin-bottom: 1.5rem;
+}
+
+.footer-link {
+  color: #e3e3e3;
+  text-decoration: none;
+  transition: color 0.2s;
+  font-weight: 400;
+}
+
+.footer-link:hover {
+  color: #f93b7a;
+  text-decoration: underline;
+}
+
+.footer-social {
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 2px solid rgba(255, 255, 255, 0.15);
+  background: transparent;
+  color: #e3e3e3;
+  font-size: 1.6rem;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-social:hover {
+  background: #f93b7a;
+  color: #fff;
+  border-color: #f93b7a;
+}
+
+.footer-main hr {
+  border-color: rgba(255, 255, 255, 0.08);
+}
+
+.footer-social:hover i {
+  color: #f93b7a !important;
+}
+
+/* Animations */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+
+  100% {
+    transform: translateY(8px);
+  }
+}
+
+.scroll-down-btn .me-2 {
+  display: inline-block;
+  animation: float 1.0s alternate infinite linear;
+}
+
+/* Button Styles */
+.btn[style*='#f93b7a'] {
+  transition: background 0.2s, color 0.2s;
+}
+
+.btn[style*='#f93b7a']:hover {
+  background: #611832 !important;
+  color: #fff !important;
+}
+
+/* Scroll to Top Button */
+.scroll-to-top {
+  position: fixed;
+  bottom: 30px;
+  right:  30px;
+  width: 45px;
+  height: 45px;
+  border-radius: 0;
+  background: #f93b7a;
+  color: #fff;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transition: all 0.3s ease;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+.scroll-to-top.visible {
+  opacity: 1;
+  visibility: visible;
+}
+
+.scroll-to-top:hover {
+  background: #611832;
+  transform: translateY(-3px);
+}
+
+.scroll-to-top i {
+  font-size: 1.2rem;
+}
+
+/* Media Queries */
+/* Extra Large Devices (1200px and below) */
+@media (max-width: 1199.98px) {
+  .hero-section {
+    min-height: 450px;
+    padding-bottom: 50px;
+  }
+
+  .display-2 {
+    font-size: 3.5rem;
+  }
+
+  .lead {
+    font-size: 1.1rem;
+  }
+
+  .sc_button {
+    min-width: 140px;
+    min-height: 44px;
+  }
+
+  .sc_button_title {
+    font-size: 0.95rem;
+  }
+
+  .social-icons-vertical {
+    margin-right: 10px;
+  }
+
+  .scroll-down {
+    margin-left: 60px;
+  }
+}
+
+/* Large Devices (992px and below) */
+@media (max-width: 991.98px) {
+  .hero-section {
+    min-height: 400px;
+    padding-bottom: 50px;
+  }
+
+  .logo-img {
+    height: 32px;
+  }
+
+  .navbar-nav {
+    text-align: center;
+    padding: 1rem 0;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 0.9rem;
+    padding: 0.5rem 0;
+  }
+
+  .sc_button {
+    min-width: 120px;
+    min-height: 40px;
+  }
+
+  .sc_button_title {
+    font-size: 0.9rem;
+  }
+
+  .display-2 {
+    font-size: 3rem;
+  }
+
+  .lead {
+    font-size: 1rem;
+  }
+
+  .btn-lg {
+    padding: 0.75rem 2rem;
+    font-size: 1rem;
+  }
+
+  .social-icons-vertical {
+    margin-right: 8px;
+  }
+
+  .icon-link {
+    width: 48px;
+    height: 48px;
+  }
+
+  .icon-link i {
+    font-size: 1.8rem;
+  }
+
+  .icon-link:hover {
+    width: 120px;
+  }
+
+  .icon-label {
+    font-size: 0.95rem;
+    min-width: 100px;
+    padding: 0 1.2rem 0 1rem;
+  }
+
+  .scroll-down {
+    margin-left: 50px;
+  }
+
+  .social-links {
+    margin-right: 50px;
+    gap: 1.2rem;
+  }
+
+  .fun-event-box {
+    min-width: 160px;
+    min-height: 80px;
+    padding: 1.2rem 1rem;
+    font-size: 1.2rem;
+  }
+
+  .casino-section-img-col {
+    justify-content: center;
+  }
+
+  .fun-event-box {
+    right: auto;
+    left: 0;
+    margin: 1rem 0 0 0;
+    position: static !important;
+  }
+
+  .casino-section-text-col {
+    text-align: left;
+    margin-left: 0;
+  }
+
+  .service-card-img {
+    height: 180px;
+  }
+
+  .service-card-body {
+    min-height: 200px;
+    padding: 1.5rem !important;
+  }
+
+  .stat-green {
+    font-size: 2.5rem !important;
+  }
+
+  .stat-desc {
+    font-size: 1rem;
+  }
+
+  .blog-card img {
+    height: 160px;
+  }
+
+  .blog-card h2 {
+    font-size: 1.3rem !important;
+  }
+
+  .corner-img {
+    width: 120px;
+    max-width: 40vw;
+  }
+
+  .footer-main {
+    font-size: 1rem;
+  }
+
+  .footer-social {
+    width: 40px;
+    height: 40px;
+    font-size: 1.2rem;
+  }
+}
+
+/* Medium Devices (768px and below) */
+@media (max-width: 767.98px) {
+  .hero-section {
+    min-height: 350px;
+    padding-bottom: 40px;
+  }
+
+  .display-2 {
+    font-size: 2.5rem;
+  }
+
+  .lead {
+    font-size: 0.9rem;
+  }
+
+  .btn-lg {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.9rem;
+  }
+
+  .welcome-text {
+    font-size: 0.85rem;
+  }
+
+  .logo-img {
+    height: 28px;
+  }
+
+  .phone-btn {
+    min-width: 36px;
+    min-height: 36px;
+  }
+
+  .sc_button {
+    min-width: 100px;
+    min-height: 36px;
+  }
+
+  .sc_button_title {
+    font-size: 0.85rem;
+  }
+
+  .scroll-down {
+    margin-left: 20px;
+  }
+
+  .scroll-down span:first-child {
+    font-size: 1.2rem;
+  }
+
+  .scroll-down span:last-child {
+    font-size: 1rem;
+  }
+
+  .social-links {
+    margin-right: 20px;
+    gap: 1rem;
+  }
+
+  .social-links a {
+    font-size: 0.9rem;
+  }
+
+  .social-icons-vertical {
+    margin-right: 5px;
+  }
+
+  .icon-link {
+    width: 40px;
+    height: 40px;
+  }
+
+  .icon-link i {
+    font-size: 1.5rem;
+  }
+
+  .icon-link:hover {
+    width: 100px;
+  }
+
+  .icon-label {
+    font-size: 0.8rem;
+    min-width: 80px;
+    padding: 0 0.8rem;
+  }
+
+  .bg-casino-gradient-2 .row {
+    flex-direction: column;
+  }
+
+  .fun-event-box {
+    position: static !important;
+    margin-top: 1rem;
+    max-width: 100%;
+  }
+
+  .service-card-img {
+    height: 140px;
+  }
+
+  .service-card-body {
+    min-height: 160px;
+    padding: 1rem !important;
+  }
+
+  .service-card-body h3 {
+    font-size: 1.1rem;
+  }
+
+  .service-arrow-btn {
+    width: 36px;
+    height: 36px;
+    font-size: 1rem;
+  }
+
+  .stat-green {
+    font-size: 2rem !important;
+  }
+
+  .stat-desc {
+    font-size: 0.95rem;
+  }
+
+  .blog-card img {
+    height: 120px;
+  }
+
+  .blog-card h2 {
+    font-size: 1.1rem !important;
+  }
+
+  .footer-main {
+    text-align: center;
+  }
+
+  .footer-main .row>div {
+    margin-bottom: 2rem;
+  }
+
+  .arrow-right {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+  
+  .arrow-right .read-more {
+    font-size: 0.8rem;
+  }
+}
+
+/* Small Devices (576px and below) */
+@media (max-width: 575.98px) {
+  .hero-section {
+    min-height: 300px;
+    padding-bottom: 40px;
+  }
+
+  .display-2 {
+    font-size: 2rem;
+  }
+
+  .lead {
+    font-size: 0.8rem;
+  }
+
+  .btn-lg {
+    padding: 0.5rem 1.2rem;
+    font-size: 0.8rem;
+  }
+
+  .welcome-text {
+    font-size: 0.75rem;
+  }
+
+  .logo-img {
+    height: 24px;
+  }
+
+  .phone-btn {
+    min-width: 32px;
+    min-height: 32px;
+  }
+
+  .sc_button {
+    min-width: 90px;
+    min-height: 32px;
+  }
+
+  .sc_button_title {
+    font-size: 0.8rem;
+  }
+
+  .scroll-down {
+    margin-left: 10px;
+  }
+
+  .scroll-down span:first-child {
+    font-size: 1rem;
+  }
+
+  .scroll-down span:last-child {
+    font-size: 0.9rem;
+  }
+
+  .social-links {
+    margin-right: 10px;
+    gap: 0.8rem;
+  }
+
+  .social-links a {
+    font-size: 0.8rem;
+  }
+
+  .social-icons-vertical {
+    display: none;
+  }
+
+  .corner-img {
+    width: 80px;
+    max-width: 50vw;
+  }
+}
+
+/* Extra Small Devices (480px and below) */
+@media (max-width: 480px) {
+  .hero-section {
+    min-height: 250px;
+    padding-bottom: 30px;
+  }
+
+  .display-2 {
+    font-size: 1.8rem;
+  }
+
+  .lead {
+    font-size: 0.75rem;
+  }
+
+  .btn-lg {
+    padding: 0.4rem 1rem;
+    font-size: 0.75rem;
+  }
+
+  .welcome-text {
+    font-size: 0.7rem;
+  }
+
+  .logo-img {
+    height: 20px;
+  }
+
+  .phone-btn {
+    min-width: 28px;
+    min-height: 28px;
+  }
+
+  .sc_button {
+    min-width: 80px;
+    min-height: 28px;
+  }
+
+  .navbar-nav .nav-link {
+    font-size: 0.8rem;
+  }
+
+  .scroll-down {
+    display: none;
+  }
+
+  .social-links {
+    margin-right: 8px;
+    gap: 0.6rem;
+  }
+
+  .social-links a {
+    font-size: 0.7rem;
+  }
+
+  .bg-video {
+    display: block;
+  }
+}
+
+/* Arrow Button Styles */
+.arrow-container {
+  margin-top: 1rem;
+}
+
+.arrow-right {
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  position: relative;
+  transition: none;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.arrow-right .arrow {
+  transition: none;
+  margin-right: 0.5rem;
+}
+
+.arrow-right .read-more {
+  opacity: 0;
+  transform: translateX(-10px);
+  font-size: 0.9rem;
+  color: #fff;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.arrow-right:hover .read-more {
+  opacity: 1;
+  transform: translateX(5px);
+}
+
+@media (max-width: 767.98px) {
+  .arrow-right {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem;
+  }
+  .arrow-right .read-more {
+    font-size: 0.8rem;
+  }
+}
+
+.count-up {
+  font-size: 4rem;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #22b455; /* or your preferred green */
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
